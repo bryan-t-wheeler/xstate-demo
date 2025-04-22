@@ -1,0 +1,14 @@
+{
+  "id": "workflow",
+  "initial": "start",
+  "states": {
+    "start": {
+      "on": {
+        "NEXT": "end"
+      }
+    },
+    "end": {
+      "on": {}
+    }
+  }
+}
