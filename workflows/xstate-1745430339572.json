@@ -1,0 +1,30 @@
+{
+  "instanceDetails": {
+    "instanceType": "1",
+    "instanceSubtype": "1"
+  },
+  "workflowStates": [
+    {
+      "name": "s1",
+      "description": "d1",
+      "events": [
+        {
+          "eventType": "InstanceCreated",
+          "action": "CreateTask",
+          "targetState": "CloseInstance"
+        }
+      ]
+    },
+    {
+      "name": "s2",
+      "description": "d2",
+      "events": [
+        {
+          "eventType": "InstanceClosed",
+          "action": "CloseInstance",
+          "targetState": "CloseTask"
+        }
+      ]
+    }
+  ]
+}
